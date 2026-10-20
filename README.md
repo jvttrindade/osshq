@@ -44,6 +44,44 @@ O QG abre em **http://localhost:4747**. Abra o Claude Code ou o Codex em qualque
 mais novo) ou Codex.
 O Node.js vem dentro do app: sem npm, git nem Docker.
 
+## Primeiros passos
+
+**1. Abra o QG.** Ele fica em **http://localhost:4747** e liga sozinho junto com o computador: deixe nos favoritos. Na
+primeira vez ele está vazio e mostra como funciona.
+
+<p align="center">
+  <img src="assets/passo-qg-vazio.png" width="820" alt="O QG recém-instalado: vazio, com o guia Como funciona o QG e o card O QG está vazio com o botão Ver demonstração" />
+</p>
+
+**2. Uma pasta por projeto.** Crie uma pasta para cada projeto, por exemplo `Documentos/Projetos/Loja`. Cada pasta vira
+uma sala no QG.
+
+**3. Converse com o Claude dentro da pasta.**
+
+- **No VS Code:** *Arquivo › Abrir Pasta…*, escolha a pasta do projeto, abra o Claude Code e mande a primeira mensagem.
+  O OssHQ acha o Claude Code que vem dentro do VS Code (e do Cursor e do Windsurf), sem você abrir terminal.
+- **No terminal:** entre na pasta (`cd Documentos/Projetos/Loja`) e rode `claude` ou `codex`.
+
+Cada conversa aberta é um atleta na sala. Duas tarefas ao mesmo tempo no mesmo projeto? Abra duas conversas na mesma
+pasta. Os subagentes o próprio agente chama: chegam pelo elevador, entregam e vão embora. Conversa do Claude Code que
+já estava aberta antes da instalação precisa de um `/reload-plugins`; no Codex, aprove os hooks do OssHQ em `/hooks`.
+
+<p align="center">
+  <img src="assets/passo-trabalhando.png" width="900" alt="O QG em demonstração: agentes nas mesas da sala chatbot-suporte com o aviso de PR aberto, o treino na Academia e, embaixo, os cards da equipe com a tarefa de cada um" />
+  <br /><sub>Cada um na sua mesa, com o que está fazendo no card de baixo.</sub>
+</p>
+
+**4. Quando precisar de você, ele avisa.** O agente levanta a mão, vai bater na porta, e o aviso aparece com
+**Responder**: aprove ou recuse dali mesmo, sem caçar o terminal certo.
+
+<p align="center">
+  <img src="assets/passo-precisa-de-voce.png" width="900" alt="O QG em demonstração com dois agentes precisando de você: o contador no topo, uma agente indo bater na porta do founder e os avisos de aprovação com o botão Responder" />
+  <br /><sub>Dois agentes esperando você: o contador no topo e os avisos com Responder.</sub>
+</p>
+
+**5. Ocioso, vai treinar.** Terminou, vai para o tatame. Chegou trabalho, larga o treino na hora ("Opa, me chamaram!
+🏃") e volta para a mesa. Em **Ajustes**, o treino fica automático, por horário ou pausado.
+
 ## O que você ganha
 
 - **Uma sala por projeto, um atleta por agente.** Você vê de relance quem está trabalhando, quem terminou e quem

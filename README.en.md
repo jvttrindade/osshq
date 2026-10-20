@@ -44,6 +44,46 @@ The HQ opens at **http://localhost:4747**. Open Claude Code or Codex in any proj
 Codex.
 Node.js ships inside the app: no npm, git or Docker.
 
+## First steps
+
+**1. Open the HQ.** It lives at **http://localhost:4747** and starts with your computer: bookmark it. The first time it
+is empty and shows how it works.
+
+<p align="center">
+  <img src="assets/passo-qg-vazio.png" width="820" alt="The freshly installed HQ: empty, with the How the HQ works guide and the empty-HQ card with the See demo button" />
+</p>
+
+**2. One folder per project.** Create a folder for each project, for example `Documents/Projects/Shop`. Each folder
+becomes a room in the HQ.
+
+**3. Talk to Claude inside the folder.**
+
+- **In VS Code:** *File › Open Folder…*, pick the project folder, open Claude Code and send the first message. OssHQ
+  finds the Claude Code bundled with VS Code (and Cursor and Windsurf), no terminal needed.
+- **In the terminal:** go into the folder (`cd Documents/Projects/Shop`) and run `claude` or `codex`.
+
+Every open conversation is an athlete in the room. Two tasks at once on the same project? Open two conversations in
+the same folder. Subagents are called by the agent itself: they arrive by elevator, deliver and leave. A Claude Code
+conversation that was already open before the install needs a `/reload-plugins`; in Codex, approve the OssHQ hooks in
+`/hooks`.
+
+<p align="center">
+  <img src="assets/passo-trabalhando.png" width="900" alt="The HQ in demo mode: agents at their desks in the chatbot-suporte room with a PR-opened banner, training at the Academy and, below, the team cards with each agent's task" />
+  <br /><sub>Everyone at their desk, with what they are doing on the card below.</sub>
+</p>
+
+**4. When it needs you, it tells you.** The agent raises a hand, goes to knock on the door, and the alert shows up with
+**Reply**: approve or deny right there, without hunting for the right terminal.
+
+<p align="center">
+  <img src="assets/passo-precisa-de-voce.png" width="900" alt="The HQ in demo mode with two agents needing you: the counter at the top, an agent walking to knock on the founder's door and the approval alerts with the Reply button" />
+  <br /><sub>Two agents waiting for you: the counter at the top and the alerts with Reply (shown here in Portuguese).</sub>
+</p>
+
+**5. Idle? Go train.** Done with the task, the athlete heads to the mat. Work comes in, it drops the training right
+away ("Oops, they're calling me! 🏃") and runs back to the desk. In **Settings**, training is automatic, scheduled or
+paused.
+
 ## What you get
 
 - **One room per project, one athlete per agent.** See at a glance who is working, who finished and who raised a hand
