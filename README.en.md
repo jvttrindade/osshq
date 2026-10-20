@@ -24,7 +24,7 @@ Codex. It runs the official installer and tells you what was set up:
 ```text
 Install OssHQ on my machine with the official installer (no sudo, for my user):
 
-curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
+curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 
 The installer's output already says the HQ address, what got connected (Claude Code and Codex) and, if needed, the line to add to PATH: no need to run anything else to check.
 At the end, sum that up for me and remind me to run /reload-plugins in the Claude Code sessions that were already open and, if I use Codex, to approve the OssHQ hooks in /hooks.
@@ -35,7 +35,7 @@ The agent asks your permission to run the command, and that's it.
 **Or from the terminal:**
 
 ```sh
-curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
+curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 ```
 
 The HQ opens at **http://localhost:4747**. Open Claude Code or Codex in any project and watch your agent walk in.
@@ -136,6 +136,10 @@ Running the same command again updates the app and keeps your data.
 OssHQ runs on your computer. It reads the session files Claude Code and Codex already write and never sends them
 anywhere. It doesn't read your credentials. The only outbound request is the update check against this repository's
 releases, every 6 hours; `OSSHQ_UPDATE_CHECK=0` in `~/.osshq/osshq.env` turns it off.
+
+The install command goes through `osshq.pages.dev`, which counts the install (where the link came from, the country
+and whether it ran in a terminal) without storing anything personal, and hands over the latest installer from this
+repository.
 
 ## Feedback
 

@@ -24,7 +24,7 @@ roda o instalador oficial e te conta o que ficou:
 ```text
 Instale o OssHQ na minha máquina com o instalador oficial (sem sudo, para o meu usuário):
 
-curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
+curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 
 A saída do instalador já diz o endereço do QG, o que ficou conectado (Claude Code e Codex) e, se precisar, a linha para pôr no PATH: não precisa rodar mais nada para conferir.
 No fim, me resuma isso e me lembre de rodar /reload-plugins nas sessões do Claude Code que já estavam abertas e, se eu uso o Codex, de aprovar os hooks do OssHQ em /hooks.
@@ -35,7 +35,7 @@ O agente pede a sua permissão para rodar o comando, e pronto.
 **Ou pelo terminal:**
 
 ```sh
-curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
+curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 ```
 
 O QG abre em **http://localhost:4747**. Abra o Claude Code ou o Codex em qualquer projeto e veja o seu agente chegar.
@@ -134,6 +134,9 @@ Rodar o mesmo comando de novo atualiza o app e mantém os seus dados.
 O OssHQ roda no seu computador. Ele lê os arquivos de sessão que o Claude Code e o Codex já gravam e nunca os manda
 para lugar nenhum. Não lê as suas credenciais. A única chamada para fora é a verificação de versão nova nas releases
 deste repositório, a cada 6 horas; `OSSHQ_UPDATE_CHECK=0` no `~/.osshq/osshq.env` desliga.
+
+O comando de instalação passa por `osshq.pages.dev`, que conta a instalação (de onde veio o link, o país e se foi
+pelo terminal) sem guardar nada pessoal, e entrega o instalador da última versão deste repositório.
 
 ## Fale com a gente
 
