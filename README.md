@@ -47,11 +47,12 @@ O Node.js vem dentro do app: sem npm, git nem Docker.
 
 ## Primeiros passos
 
-**1. Abra o QG.** Ele fica em **http://localhost:4747** e liga sozinho junto com o computador: deixe nos favoritos. Na
-primeira vez ele está vazio e mostra como funciona.
+**1. Abra o QG.** No fim da instalação ele abre sozinho no navegador, em **http://localhost:4747**, e daí em diante liga
+junto com o computador. Na primeira vez ele está vazio, mostra como funciona e oferece virar app, com ícone no Dock e
+janela própria: no Chrome e no Edge é um clique em **Instalar app**; no Safari, *Arquivo › Adicionar ao Dock*.
 
 <p align="center">
-  <img src="assets/passo-qg-vazio.png" width="820" alt="O QG recém-instalado: vazio, com o guia Como funciona o QG e o card O QG está vazio com o botão Ver demonstração" />
+  <img src="assets/passo-qg-vazio.png" width="820" alt="O QG recém-instalado: vazio, com o guia Como funciona o QG, o convite Quer o OssHQ como app com o botão Instalar app e o card O QG está vazio" />
 </p>
 
 **2. Uma pasta por projeto.** Crie uma pasta para cada projeto, por exemplo `Documentos/Projetos/Loja`. Cada pasta vira

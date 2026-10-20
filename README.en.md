@@ -47,11 +47,12 @@ Node.js ships inside the app: no npm, git or Docker.
 
 ## First steps
 
-**1. Open the HQ.** It lives at **http://localhost:4747** and starts with your computer: bookmark it. The first time it
-is empty and shows how it works.
+**1. Open the HQ.** At the end of the install it opens by itself in your browser, at **http://localhost:4747**, and from
+then on it starts with your computer. The first time it is empty, shows how it works and offers to become an app, with
+its own Dock icon and window: in Chrome and Edge it is one click on **Install app**; in Safari, *File › Add to Dock*.
 
 <p align="center">
-  <img src="assets/passo-qg-vazio.png" width="820" alt="The freshly installed HQ: empty, with the How the HQ works guide and the empty-HQ card with the See demo button" />
+  <img src="assets/passo-qg-vazio.png" width="820" alt="The freshly installed HQ: empty, with the How the HQ works guide, the Want OssHQ as an app invitation with the Install app button and the empty-HQ card" />
 </p>
 
 **2. One folder per project.** Create a folder for each project, for example `Documents/Projects/Shop`. Each folder
