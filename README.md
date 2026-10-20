@@ -1,105 +1,115 @@
 <p align="center">
-  <img src="assets/logo-mark@4x.png" width="96" alt="OssHQ logo: a small pixel-art building" />
+  <img src="assets/logo-mark@4x.png" width="96" alt="Logo do OssHQ: um predinho em pixel art" />
 </p>
 
 <h1 align="center">OssHQ</h1>
 
 <p align="center">
-  <b>The pixel-art HQ for your AI agents.</b><br />
-  Every Claude Code and Codex session becomes an athlete: it works at the desk, trains jiu-jitsu when idle and earns
-  its belt with the work it delivers.
+  <b>O QG em pixel art dos seus agentes de IA.</b><br />
+  Cada sessão do Claude Code e do Codex vira um atleta: trabalha sentado na mesa, treina jiu-jitsu quando fica à toa e
+  gradua com o trabalho que entrega.
 </p>
 
-<p align="center"><b>English</b> · <a href="README.pt-BR.md">Português</a></p>
+<p align="center"><b>Português</b> · <a href="README.en.md">English</a></p>
 
 <p align="center">
-  <img src="assets/osshq-qg.png" width="900" alt="The OssHQ HQ: on top the reception, the founder's room, the açaí bar and the project rooms with agents at their desks; below the locker room, the Academy with the mat and more rooms" />
+  <img src="assets/osshq-qg.png" width="900" alt="O QG do OssHQ: em cima a recepção, a sala do founder, o açaí e as salas dos projetos, com os agentes nas mesas; no meio o corredor com os lemas no chão; embaixo o vestiário, a Academia com os dois tatames e mais salas" />
 </p>
 
-## Install
+## Instalar
 
-**Through your agent, the easiest way.** Paste this into Claude Code (in the terminal, in VS Code or in the app) or into
-Codex. It runs the official installer and tells you what was set up:
+**Pelo seu agente, o jeito mais fácil.** Cole isto no Claude Code (no terminal, no VS Code ou no app) ou no Codex. Ele
+roda o instalador oficial e te conta o que ficou:
 
 ```text
-Install OssHQ on my machine with the official installer (no sudo, for my user):
+Instale o OssHQ na minha máquina com o instalador oficial (sem sudo, para o meu usuário):
 
 curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
 
-The installer's output already says the HQ address, what got connected (Claude Code and Codex) and, if needed, the line to add to PATH: no need to run anything else to check.
-At the end, sum that up for me and remind me to run /reload-plugins in the Claude Code sessions that were already open and, if I use Codex, to approve the OssHQ hooks in /hooks.
+A saída do instalador já diz o endereço do QG, o que ficou conectado (Claude Code e Codex) e, se precisar, a linha para pôr no PATH: não precisa rodar mais nada para conferir.
+No fim, me resuma isso e me lembre de rodar /reload-plugins nas sessões do Claude Code que já estavam abertas e, se eu uso o Codex, de aprovar os hooks do OssHQ em /hooks.
 ```
 
-The agent asks your permission to run the command, and that's it.
+O agente pede a sua permissão para rodar o comando, e pronto.
 
-**Or from the terminal:**
+**Ou pelo terminal:**
 
 ```sh
 curl -fsSL https://github.com/jvttrindade/osshq/releases/latest/download/install.sh | sh
 ```
 
-The HQ opens at **http://localhost:4747**. Open Claude Code or Codex in any project and watch your agent walk in.
+O QG abre em **http://localhost:4747**. Abra o Claude Code ou o Codex em qualquer projeto e veja o seu agente chegar.
 
-**Needs:** macOS 13.5 or newer (Apple Silicon or Intel) or Linux (x64 or arm64), and Claude Code (2.1.287 or newer) or
-Codex.
-Node.js ships inside the app: no npm, git or Docker.
+**Precisa de:** macOS 13.5 ou mais novo (Apple Silicon ou Intel) ou Linux (x64 ou arm64), e Claude Code (2.1.287 ou
+mais novo) ou Codex.
+O Node.js vem dentro do app: sem npm, git nem Docker.
 
-## What you get
+## O que você ganha
 
-- **One room per project, one athlete per agent.** See at a glance who is working, who finished and who raised a hand
-  because they **need you**.
-- **Answer from the HQ.** Approve or deny permission requests and send messages to an agent without hunting for the
-  right terminal.
-- **Your usage, live.** 5-hour and weekly usage for every Claude Code account.
-- **The belt is earned.** Every agent starts as a white belt and is promoted by the work it delivers, with stripes
-  along the way. Nobody gets a belt as a gift.
-- **The Academy.** Idle agents put on the gi and roll on the mat, with IBJJF points, a referee and a bow at the edge of
-  the mat. Oss.
+- **Uma sala por projeto, um atleta por agente.** Você vê de relance quem está trabalhando, quem terminou e quem
+  levantou a mão porque **precisa de você**.
+- **Responda pelo QG.** Aprove ou recuse pedidos de permissão e mande mensagem para o agente sem caçar o terminal
+  certo.
+- **O seu uso, ao vivo.** Uso de 5 horas e da semana de cada conta do Claude Code.
+- **A faixa é conquistada.** Todo agente começa na branca e gradua pelo trabalho que entrega, com os graus no caminho.
+  Ninguém ganha faixa de presente.
+- **A Academia.** Quem fica à toa põe o kimono e rola no tatame, com pontos da IBJJF, árbitro e o cumprimento na beira
+  do tatame. Oss.
 
-## Commands
+<p align="center">
+  <img src="assets/osshq-academia.png" width="900" alt="A Academia do OssHQ: dois atletas rolando no tatame preto de No-Gi, agentes treinando de kimono no tatame azul, o Mestre, o Professor e a Professora acompanhando, e na parede a bandeira do Brasil, o OSS e Hélio Gracie" />
+  <br /><sub>Ocioso? Vai treinar. Rola, bate e cumprimenta.</sub>
+</p>
 
-| Command | What it does |
+<p align="center">
+  <img src="assets/osshq-faixa.png" width="400" alt="Atleta de kimono branco com a faixa preta de quatro graus em cima do tatame, com a régua das cinco faixas embaixo: branca, azul, roxa, marrom e preta" />
+  <br /><sub>Da branca à preta, grau por grau, pelo trabalho entregue.</sub>
+</p>
+
+## Comandos
+
+| Comando | O que faz |
 | --- | --- |
-| `osshq` | Starts the HQ if needed and opens it in the browser |
-| `osshq status` | Version, address and whether the HQ is up |
-| `osshq stop` · `osshq start` | Stops or starts the HQ |
-| `osshq update` | Downloads and installs the newest version |
-| `osshq setup` | Installs (again) the Claude Code mod and the Codex hooks |
-| `osshq mod status` · `osshq codex status` | Checks the mod in each Claude Code account and the Codex hooks |
-| `osshq uninstall --sim` | Removes the mod, the hooks, the service and the app (your data stays in `~/.osshq`) |
+| `osshq` | Liga o QG, se preciso, e abre no navegador |
+| `osshq status` | Versão, endereço e se o QG está no ar |
+| `osshq stop` · `osshq start` | Desliga ou liga o QG |
+| `osshq update` | Baixa e instala a versão mais nova |
+| `osshq setup` | Instala (de novo) o mod do Claude Code e os hooks do Codex |
+| `osshq mod status` · `osshq codex status` | Confere o mod em cada conta do Claude Code e os hooks do Codex |
+| `osshq uninstall --sim` | Tira o mod, os hooks, o serviço e o app (seus dados ficam em `~/.osshq`) |
 
-Settings live in `~/.osshq/osshq.env`, one variable per line (for example `OSSHQ_PORT=4848`).
+A configuração fica em `~/.osshq/osshq.env`, uma variável por linha (por exemplo `OSSHQ_PORT=4848`).
 
-## What the installer does
+## O que o instalador faz
 
-1. Downloads the app for your system from this repository's [Releases](../../releases) and checks its SHA-256.
-2. Installs it in `~/.osshq/app` and adds the `osshq` command to `~/.local/bin`.
-3. Installs the OssHQ mod in each Claude Code account through Claude Code's own `claude plugin` command, and the hooks
-   in `~/.codex/hooks.json` (with a backup). Codex runs new hooks only after you approve them in `/hooks`.
-4. Registers a login service (LaunchAgent on macOS, systemd user unit on Linux), so the HQ is always on. It listens
-   only on `127.0.0.1`.
+1. Baixa o app do seu sistema nas [Releases](../../releases) deste repositório e confere o SHA-256.
+2. Instala em `~/.osshq/app` e põe o comando `osshq` em `~/.local/bin`.
+3. Instala o mod do OssHQ em cada conta do Claude Code pelo próprio `claude plugin`, e os hooks em
+   `~/.codex/hooks.json` (com backup). O Codex só roda hook novo depois que você aprova em `/hooks`.
+4. Cadastra um serviço que liga com o computador (LaunchAgent no macOS, systemd do usuário no Linux), para o QG ficar
+   sempre no ar. Ele só escuta em `127.0.0.1`.
 
-Running the same command again updates the app and keeps your data.
+Rodar o mesmo comando de novo atualiza o app e mantém os seus dados.
 
-## Privacy
+## Privacidade
 
-OssHQ runs on your computer. It reads the session files Claude Code and Codex already write and never sends them
-anywhere. It doesn't read your credentials. The only outbound request is the update check against this repository's
-releases, every 6 hours; `OSSHQ_UPDATE_CHECK=0` in `~/.osshq/osshq.env` turns it off.
+O OssHQ roda no seu computador. Ele lê os arquivos de sessão que o Claude Code e o Codex já gravam e nunca os manda
+para lugar nenhum. Não lê as suas credenciais. A única chamada para fora é a verificação de versão nova nas releases
+deste repositório, a cada 6 horas; `OSSHQ_UPDATE_CHECK=0` no `~/.osshq/osshq.env` desliga.
 
-## Feedback
+## Fale com a gente
 
-Found a bug or have an idea? [Open an issue](../../issues). This repository hosts the releases, the installer and the
-issues; the app's source code is not published here.
+Achou um erro ou tem uma ideia? [Abra uma issue](../../issues). Este repositório guarda as releases, o instalador e as
+issues; o código-fonte do app não é publicado aqui.
 
-## License
+## Licença
 
-OssHQ belongs to T.EDT: the releases published here are free to use, but the code is not open source. The terms are in
-[LICENSE](LICENSE), which also ships inside the app; by installing, you accept that license.
+O OssHQ é da T.EDT: as versões publicadas aqui são de uso gratuito, mas o código não é aberto. Os termos estão no
+[LICENSE](LICENSE), que também vai dentro do app; ao instalar, você aceita essa licença.
 
-OssHQ started from [Habblaud](https://github.com/marmottajr/habblaud) by Márcio Junior (MIT). His notice is at the end
-of `LICENSE`, and the other components' notices ship inside the app, in `THIRD_PARTY_NOTICES.md`. The photo of Hélio
-Gracie on the Academy wall is by Satorijits, on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Helio_Gracie_in_2004.jpg),
-under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+O OssHQ nasceu do [Habblaud](https://github.com/marmottajr/habblaud), de Márcio Junior (MIT). O aviso dele fica no fim
+do `LICENSE`, e os dos outros componentes vão dentro do app, em `THIRD_PARTY_NOTICES.md`. A foto de Hélio Gracie na
+parede da Academia é de Satorijits, no [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Helio_Gracie_in_2004.jpg),
+sob [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
-<p align="center"><i>Fight for life, live for fight.</i><br />Made by T.EDT · Trindade Educação Tecnológica</p>
+<p align="center"><i>Fight for life, live for fight.</i><br />Feito pela T.EDT · Trindade Educação Tecnológica</p>
