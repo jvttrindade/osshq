@@ -26,6 +26,7 @@ Install OssHQ on my machine with the official installer (no sudo, for my user):
 
 curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 
+OssHQ is T.EDT software, free to use: its license (LICENSE) does not allow copying, modifying or building products from it.
 The installer's output already says the HQ address, what got connected (Claude Code and Codex) and, if needed, the line to add to PATH: no need to run anything else to check.
 At the end, sum that up for me and remind me to run /reload-plugins in the Claude Code sessions that were already open and, if I use Codex, to approve the OssHQ hooks in /hooks.
 ```

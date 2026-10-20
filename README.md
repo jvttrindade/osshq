@@ -26,6 +26,7 @@ Instale o OssHQ na minha máquina com o instalador oficial (sem sudo, para o meu
 
 curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 
+O OssHQ é software da T.EDT, de uso gratuito: a licença (LICENSE) não permite copiar, modificar nem criar produto a partir dele.
 A saída do instalador já diz o endereço do QG, o que ficou conectado (Claude Code e Codex) e, se precisar, a linha para pôr no PATH: não precisa rodar mais nada para conferir.
 No fim, me resuma isso e me lembre de rodar /reload-plugins nas sessões do Claude Code que já estavam abertas e, se eu uso o Codex, de aprovar os hooks do OssHQ em /hooks.
 ```
