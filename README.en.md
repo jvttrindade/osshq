@@ -21,7 +21,7 @@
 **In the terminal, the surest way.** Open Terminal (on a Mac: ⌘ Space, type “Terminal”), paste this and press Enter:
 
 ```sh
-curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
+curl -fsSL "https://osshq.com.br/install?de=gh" | sh
 ```
 
 **Or through your agent.** Rather not open the terminal? Paste this into Claude Code (in VS Code or in the app) or
@@ -33,7 +33,7 @@ Install OssHQ on my machine with the official installer (no sudo, for my user):
 
 Before running the installer, confirm the commands will run on my computer, not on a cloud server. If you can't confirm it (in a browser chat, like claude.ai or ChatGPT, commands run on a server), don't install anything: just ask me to paste this prompt into Claude Code or Codex on my computer.
 
-curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
+curl -fsSL "https://osshq.com.br/install?de=gh" | sh
 
 OssHQ is T.EDT software, free to use: its license (LICENSE) does not allow copying, modifying or building products from it.
 The installer's output already says the HQ address, what got connected (Claude Code and Codex) and, if needed, the line to add to PATH: no need to run anything else to check.
@@ -146,7 +146,7 @@ OssHQ runs on your computer. It reads the session files Claude Code and Codex al
 anywhere. It doesn't read your credentials. The only outbound request is the update check against this repository's
 releases, every 6 hours; `OSSHQ_UPDATE_CHECK=0` in `~/.osshq/osshq.env` turns it off.
 
-The install command goes through `osshq.pages.dev`, which counts the install (where the link came from, the country
+The install command goes through `osshq.com.br`, which counts the install (where the link came from, the country
 and whether it ran in a terminal) without storing anything personal, and hands over the latest installer from this
 repository.
 

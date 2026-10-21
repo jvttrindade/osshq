@@ -21,7 +21,7 @@
 **No terminal, o jeito mais firme.** Abra o Terminal (no Mac: ⌘ Espaço, digite “Terminal”), cole isto e aperte Enter:
 
 ```sh
-curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
+curl -fsSL "https://osshq.com.br/install?de=gh" | sh
 ```
 
 **Ou pelo seu agente.** Prefere não abrir o terminal? Cole isto no Claude Code (no VS Code ou no app) ou no Codex, no
@@ -33,7 +33,7 @@ Instale o OssHQ na minha máquina com o instalador oficial (sem sudo, para o meu
 
 Antes de executar o instalador, confirme que os comandos vão rodar no meu computador, e não num servidor na nuvem. Se não puder confirmar (num chat do navegador, como claude.ai ou ChatGPT, os comandos rodam num servidor), não instale nada: só me peça para colar este prompt no Claude Code ou no Codex do meu computador.
 
-curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
+curl -fsSL "https://osshq.com.br/install?de=gh" | sh
 
 O OssHQ é software da T.EDT, de uso gratuito: a licença (LICENSE) não permite copiar, modificar nem criar produto a partir dele.
 A saída do instalador já diz o endereço do QG, o que ficou conectado (Claude Code e Codex) e, se precisar, a linha para pôr no PATH: não precisa rodar mais nada para conferir.
@@ -144,7 +144,7 @@ O OssHQ roda no seu computador. Ele lê os arquivos de sessão que o Claude Code
 para lugar nenhum. Não lê as suas credenciais. A única chamada para fora é a verificação de versão nova nas releases
 deste repositório, a cada 6 horas; `OSSHQ_UPDATE_CHECK=0` no `~/.osshq/osshq.env` desliga.
 
-O comando de instalação passa por `osshq.pages.dev`, que conta a instalação (de onde veio o link, o país e se foi
+O comando de instalação passa por `osshq.com.br`, que conta a instalação (de onde veio o link, o país e se foi
 pelo terminal) sem guardar nada pessoal, e entrega o instalador da última versão deste repositório.
 
 ## Fale com a gente
