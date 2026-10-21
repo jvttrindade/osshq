@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-mark@4x.png" width="96" alt="OssHQ logo: a small pixel-art building" />
+  <img src="assets/logo-mark@4x.png" width="96" alt="OssHQ logo: a pixel-art jiu-jitsu black belt" />
 </p>
 
 <h1 align="center">OssHQ</h1>
@@ -13,16 +13,25 @@
 <p align="center"><a href="README.md">Português</a> · <b>English</b></p>
 
 <p align="center">
-  <img src="assets/osshq-qg.png" width="900" alt="The OssHQ HQ: on top the reception, the founder's room, the açaí bar and the project rooms with agents at their desks; in the middle the corridor with the mottos on the floor; below the locker room, the Academy with its two mats and more rooms" />
+  <img src="assets/osshq-qg.gif" width="900" alt="The OssHQ HQ in motion: on top the reception, the founder's room, the açaí bar and the project rooms with agents at their desks; in the middle the corridor with the mottos on the floor; below the locker room and the Academy, with a pair rolling on the mat, the match score and the Master coaching from the side" />
 </p>
 
 ## Install
 
-**Through your agent, the easiest way.** Paste this into Claude Code (in the terminal, in VS Code or in the app) or into
-Codex. It runs the official installer and tells you what was set up:
+**In the terminal, the surest way.** Open Terminal (on a Mac: ⌘ Space, type “Terminal”), paste this and press Enter:
+
+```sh
+curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
+```
+
+**Or through your agent.** Rather not open the terminal? Paste this into Claude Code (in VS Code or in the app) or
+into Codex, on your computer. It runs the same installer and tells you what was set up. A browser chat (claude.ai,
+ChatGPT) can't install it: there, commands run on a server, not on your machine.
 
 ```text
 Install OssHQ on my machine with the official installer (no sudo, for my user):
+
+Before running the installer, confirm the commands will run on my computer, not on a cloud server. If you can't confirm it (in a browser chat, like claude.ai or ChatGPT, commands run on a server), don't install anything: just ask me to paste this prompt into Claude Code or Codex on my computer.
 
 curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
 
@@ -32,12 +41,6 @@ At the end, sum that up for me and remind me to run /reload-plugins in the Claud
 ```
 
 The agent asks your permission to run the command, and that's it.
-
-**Or from the terminal:**
-
-```sh
-curl -fsSL "https://osshq.pages.dev/install?de=gh" | sh
-```
 
 The HQ opens at **http://localhost:4747**. Open Claude Code or Codex in any project and watch your agent walk in.
 
@@ -97,6 +100,10 @@ paused.
   along the way. Nobody gets a belt as a gift.
 - **The Academy.** Idle agents put on the gi and roll on the mat, with IBJJF points, a referee and a bow at the edge of
   the mat. Oss.
+- **Record the HQ.** One click on **Gravar** (Record) and you get a short video of your HQ, ready to post: vertical or
+  horizontal, 15 or 30 seconds, in MP4. The camera goes on its own to the best moment (a roll, rock-paper-scissors,
+  someone delivering, someone who needs you). Projects are hidden by default: rooms become "Project 1" and no bubble or
+  line shows a file, command or task. All in the browser: nothing leaves your computer.
 
 <p align="center">
   <img src="assets/osshq-academia.png" width="900" alt="The OssHQ Academy: two athletes rolling on the black No-Gi mat, agents training in the gi on the blue mat, the coaches watching, and on the wall the Brazilian flag, OSS and Hélio Gracie" />
